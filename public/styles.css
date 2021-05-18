@@ -1,7 +1,9 @@
+/* UNIVERSAL STYLING */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -22,36 +24,40 @@ body {
     align-items: center;
 }
 
+/* SETS STYLING FOR ENTIRE COMPONENT */
 .card {
     height: 250px;
     width: 450px;
-
-    display: flex;
-    flex-flow: column wrap;
-
-    border: #E2E2E2 2px solid;
-    border-radius: 10px;
     font-size: 12px;
 
     padding: 20px;
+    border: #E2E2E2 2px solid;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .card:hover {
-    box-shadow: 0px 0px 10px 10px #535358;
+    box-shadow: 0px 0px 3px 3px #535358;
 }
 
+
+/* STYLING FOR REVIEWER IMAGE AND DETAILS */
 .reviewer {
     width: 100%;
     height: 50px;
 
     display: flex;
     flex-flow: row wrap;
+
     margin-bottom: 16px;
 }
 
-.profile {
+.picture {
     width: 50px;
     height: 50px;
+
     border-radius: 50%;
     object-fit: cover;
 }
@@ -72,25 +78,46 @@ body {
 }
 
 .verified {
-    font-size: 12px;
     color: #2E7D32;
 }
 
-
+/* STYLING FOR REVIEW SUMMARY & DESCRIPTION */
 .card-info {
     width: 100%;
     height: calc(100%-50px);
 }
 
 .summary {
-    font-size: 12px;
     font-weight: 600;
     color: #161619;
+
     margin-bottom: 16px;
 }
 
 .description {
-    font-size: 12px;
     color: #535358;
+
     margin-bottom: 16px;
+}
+
+/* STYLING FOR ADDITIONAL REVIEW DETAILS */
+.stars {
+    color: #F9A825;
+}
+
+.for {
+    margin-bottom: 16px;
+}
+
+.quimbee {
+    font-weight: 600;
+}
+
+.days {
+    color: #535358;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+    
 }
