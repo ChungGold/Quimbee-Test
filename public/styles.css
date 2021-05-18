@@ -127,9 +127,17 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1350px) {
+    #app {
+        width: 900px;
+        justify-content: flex-start;
+    }
+}
+
 @media (max-width: 992px) {
     #app {
         flex-flow: column wrap;
+        justify-content: flex-start;
     }
 
     .card {
