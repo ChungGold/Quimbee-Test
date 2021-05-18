@@ -11,11 +11,13 @@ const createCard = (Reviewers) => {
         summary = {Reviewers.summary}
         description = {Reviewers.description}
         rating = {Reviewers.rating}
+        daysAgo = {Reviewers.daysAgo}
+        business = {Reviewers.business}
     />
     )
 }
 
-const App = props => {
+const App = () => {
     return (<div id = 'app'>
         {Reviewers.map(createCard)}
     </div>);
