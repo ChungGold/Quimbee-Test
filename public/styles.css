@@ -23,11 +23,17 @@ body {
 }
 
 .card {
-    height: 500px;
-    width: 500px;
+    height: 250px;
+    width: 450px;
 
     display: flex;
     flex-flow: column wrap;
+
+    border: #E2E2E2 2px solid;
+    border-radius: 10px;
+    font-size: 12px;
+
+    padding: 20px;
 }
 
 .card:hover {
@@ -36,17 +42,27 @@ body {
 
 .reviewer {
     width: 100%;
-    height: 100px;
+    height: 50px;
 
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 16px;
 }
 
-.image {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+.profile {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info {
+    width: calc(100%-50px);
+    height: 50px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 .name {
@@ -63,20 +79,18 @@ body {
 
 .card-info {
     width: 100%;
-    height: 400px;
-}
-
-.card-info p{
-    display: inline-block;
+    height: calc(100%-50px);
 }
 
 .summary {
     font-size: 12px;
     font-weight: 600;
     color: #161619;
+    margin-bottom: 16px;
 }
 
 .description {
     font-size: 12px;
     color: #535358;
+    margin-bottom: 16px;
 }
