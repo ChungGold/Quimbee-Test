@@ -15,18 +15,20 @@
 // }
 
 const Card = props => {
-    return (<figure className = 'card'>
-        <div className = 'image'>image</div>
-        <p className = 'reviewer'>Chung Au</p>
-        <p className = 'verified'>Verified purchaser</p>
+    return (<div className = 'card'>
+        <figure className = 'reviewer'>
+            <div className = 'image'></div>
+            <figcaption className = 'name'>Chung Au</figcaption>
+            <figcaption className = 'verified'>Verified purchaser</figcaption>
+        </figure>
         <figcaption className = 'card-info'>
-            <h1>Quimbee is the best thing ever. And this goes to two lines.</h1>
-            <p>I love Quim bee. It saved me in the 1L and it's saving me in 2L. I love it all and it's money well spent.</p>
+            <p className = 'summary'>Quimbee is the best thing ever. And this goes to two lines.</p>
+            <p className = 'description'>I love Quim bee. It saved me in the 1L and it's saving me in 2L. I love it all and it's money well spent.</p>
             <p>4 out of 5</p>
             <p>for<span>Quimbee Bar Review</span></p>
             <p>Reviwed 3 days ago</p>
         </figcaption>
-    </figure>);
+    </div>);
 }
 
 export default Card;
