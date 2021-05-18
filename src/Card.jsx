@@ -12,7 +12,7 @@ const Card = props => {
         <figcaption className = 'card-info'>
             <p className = 'summary'>{props.summary}</p>
             <p className = 'description'>{props.description}</p>
-            <p>
+            <p className = 'rating'>
                 <span className = 'stars'><HiStar /><HiStar /><HiStar /><HiStar /><HiOutlineStar /></span>
                 {props.rating}
             </p>

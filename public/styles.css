@@ -26,7 +26,7 @@ body {
 
 /* SETS STYLING FOR ENTIRE COMPONENT */
 .card {
-    height: 250px;
+    height: 260px;
     width: 450px;
     font-size: 12px;
 
@@ -101,6 +101,10 @@ body {
 }
 
 /* STYLING FOR ADDITIONAL REVIEW DETAILS */
+.rating {
+    margin-bottom: 8px;
+}
+
 .stars {
     color: #F9A825;
 }
@@ -119,5 +123,16 @@ body {
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
+    .card {
+        height: 300px;
+        width: 225px;
+        font-size: 12px;
     
+        padding: 16px;
+        border: #E2E2E2 2px solid;
+        border-radius: 10px;
+    
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
