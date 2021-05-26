@@ -1,4 +1,5 @@
-import {HiOutlineShieldCheck, HiOutlineShieldExclamation, HiStar, HiOutlineStar} from 'react-icons/hi';
+import {HiOutlineShieldCheck, HiOutlineShieldExclamation, HiStar, HiOutlineStar} from 'react-icons/hi'
+import { WholeCard, Reviewer, Pic, ReviewerInfo, Name, CardInfo, Summary, Description, Rating  } from './Styles'
 
 // NUMBER OF STARS RENDER BASED ON Reviewers.rating
 const createStars = (props) => {
@@ -74,28 +75,30 @@ const verify = (props) => {
 
 //CARD COMPONENT
 const Card = props => {
-    return (<div className = 'card'>
+    return (
+        <WholeCard>
 
-        <figure className = 'reviewer'>
-            <img src = {props.image} alt = {props.alt} className = 'picture'></img>
-            <div className = 'reviewer-info'>
-                <figcaption className = 'name'>{props.name}</figcaption>
-                {verify(props.verified)}
-            </div>
-        </figure>
+            <Reviewer>
+                <Pic src = {props.image} alt = {props.alt} />
+                <ReviewerInfo>
+                    <Name>{props.name}</Name>
+                    {verify(props.verified)}
+                </ReviewerInfo>
+            </Reviewer>
 
-        <figcaption className = 'card-info'>
-            <p className = 'summary'>{props.summary}</p>
-            <p className = 'description'>{props.description}</p>
-            <p className = 'rating'>
-                {createStars(props.rating)}
-                {props.rating} out of 5
-            </p>
-            <p className = 'for'>for <span className = 'quimbee'>{props.business}</span></p>
-            <p className = 'days'>Reviewed {props.daysAgo} days ago</p>
-        </figcaption>
+            <CardInfo>
+                <Summary>{props.summary}</Summary>
+                <Description>{props.description}</Description>
+                <Rating>
+                    {createStars(props.rating)}
+                    {props.rating} out of 5
+                </Rating>
+                <p className = 'for'>for <span className = 'quimbee'>{props.business}</span></p>
+                <p className = 'days'>Reviewed {props.daysAgo} days ago</p>
+            </CardInfo>
 
-    </div>);
+        </WholeCard>
+    );
 }
 
 export default Card;

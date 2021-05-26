@@ -1,6 +1,6 @@
-import chung from './assets/chung.png';
-import matthew from './assets/matthew.PNG';
-import rogan from './assets/rogan.png';
+import chung from '../assets/chung.png';
+import matthew from '../assets/matthew.PNG';
+import rogan from '../assets/rogan.png';
 
 const Reviewers = [
     {
